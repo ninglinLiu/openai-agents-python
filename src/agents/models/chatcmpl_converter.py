@@ -762,7 +762,7 @@ class Converter:
                     elif c["type"] == "refusal":
                         refusal = c["refusal"]
                     elif c["type"] == "output_audio":
-                        # Can't handle this, b/c chat completions expects an ID which we dont have
+                        # Can't handle this, b/c chat completions expects an ID which we don't have
                         raise UserError(
                             f"Only audio IDs are supported for chat completions, but got: {c}"
                         )
